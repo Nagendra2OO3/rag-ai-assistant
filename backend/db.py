@@ -1,7 +1,9 @@
 import sqlite3
 
 
-DB_NAME = "database/users.db"
+import os
+
+DB_NAME = os.path.join("/tmp", "users.db")
 
 
 def connect_db():
